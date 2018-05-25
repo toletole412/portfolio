@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Full Screen Landing Page</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="intro">
+     <div class="left-box"><br /><BR /><BR /><BR /><BR />HELLO I'M YOONJI<BR />I AM FRONT-END/ REACT DEVELOPER.</div>
+     <div class="right-box_1" id="box_1" onclick="location.href='#me';" style="cursor: pointer;">
+       <div class=item>
+       <i class="fa fa-search" aria-hidden="true" ></i>
+       ABOUT ME
+       </div>
+     </div>
+     <div class="right-box_2" onclick="location.href='#portfolio';" style="cursor: pointer;">
+       <div class=item>
+       <i class="fa fa-laptop" aria-hidden="true"></i>
+       PORTFOLIO
+       </div>
+     </div>
+     <div class="right-box_3" onclick="location.href='#contact';" style="cursor: pointer;">
+       <div class=item>
+       <i class="fa fa-mobile" aria-hidden="true"></i>
+       CONTACT
+       </div>
+     </div>
+   </section>
+   <section class="AboutMe" id="me">
+     <div class="profile">
+       <img src="https://imagizer.imageshack.com/v2/1024x768q90/924/0Cyjm4.png"
+            style="border-radius: 80px;"
+            class="picture">
+      <div class="profile-bio">
+        <p>
+          <br />I'M FRONT-END/FULL-STACK CODER IN AMSTERDAM.
+          <br />I love coding and humor.
+          Always want to learn and work with awesome people.<br />
+          I am fast-learner and know how to work with others. <br />
+          Looking for company where I can apply my skills and continue to grow both professionally and personally.
+        </p>
+      </div>
+     </div>
+     <div class="skill">
+         <p style="margin-left:100px; margin-top:0px; text-align:center;"><strong>SKILLS</strong></p>
+         <p style="margin-left:100px; margin-top:-50px;">
+           frontend    <small style=" font-size:30px;">HTML/CSS/JAVSCRIPT/SaSS/React/Redux</small>
+         </p>
+         <p style="margin-left:100px; margin-top:-50px;">
+           backend    <small style=" font-size:30px;">typescript/express.js/sequelize/postgreSql</small>
+         </p>
+         <p style="margin-left:100px; margin-top:-50px;">
+           Tools    <small style=" font-size:30px;">git/docker</small>
+         </p>
+     </div>
+     <div class="goal">
+         <p style="margin-left:100px; margin-top:0px;  text-align:center;"><strong>GOAL</strong></p>
+         <p style="margin-left:100px; margin-top:-50px;">
+           5 years  <small style=" font-size:30px;">frontend master</small>
+         </p>
+         <p style="margin-left:100px; margin-top:-50px;">
+           10 years    <small style=" font-size:30px;">fullstack master</small>
+         </p>
+     </div>
+     <div class="school">
+       <p style="margin-left:100px; margin-top:10px;  text-align:center;"><strong>education</strong></p>
+       <p style="margin-left:100px; margin-top:-50px;">
+        <small style=" font-size:30px;">feb/2018-apr/2018(Amsterdam)<br /></small>
+        <a href="https://codaisseur.com/"
+          style="text-decoration:none">codaisseur</a>  <small style=" font-size:30px;">javascript fullstack course</small>
+       </p>
+       <p style="margin-left:100px; margin-top:-50px;">
+        <small style=" font-size:30px;">mar/2009-aug/2016(seoul)<br /></small>
+        <a href="http://www.skku.edu/eng_home/index.jsp"
+          style="text-decoration:none">skku</a>  <small style=" font-size:30px;">bachelor degree in Business administration</small>
+       </p>
+     </div>
+     <div class="experience">
+       <p style="margin-left:100px; margin-top:10px;  text-align:center;"><strong>working experience</strong></p>
+       <p style="margin-left:100px; margin-top:-50px;">
+        <small style=" font-size:30px;">may/2016-sep/2017(seoul)<br /></small>
+        FMASSOCIATES  <small style=" font-size:30px;">business consultant</small>
+       </p>
+     </div>
+     <div class="navbar" id="myNavbar">
+        <a href="#me" class="active">ABOUT ME</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+          onclick="myFunction()">&#9776;</a>
+     </div>
+   </section>
+   <section class="portfolio" id="portfolio">
+   </section>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+  }
+  </script>
+  </body>
+</html>

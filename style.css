@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Ubuntu');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.intro, .AboutMe, .portfolio {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: #f8f8f6;
+  display: table;
+  top: 0;
+}
+.left-box {
+  float: left;
+  width: 66.65%;
+  height: 100%;
+  background: url(https://imagizer.imageshack.com/v2/1024x768q90/923/3WTLcE.png) no-repeat 50% 50%;
+  opacity: 0.9;
+  text-align: CENTER;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+}
+.right-box_1 {
+  float: right;
+  width: 33.3%;
+  height: 33.3%;
+  background: url("http://www.misucell.com/data/out/5/IMG_63143.png");
+  opacity: 0.5;
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-box_1:hover {
+  color: black;
+}
+.item {
+  max-width: 50%;
+}
+
+.right-box_2 {
+  float: right;
+  width: 33.3%;
+  height: 33.3%;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/60/Single_Color_Flag_-_0087DC.png");
+  opacity: 0.9;
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-box_2:hover {
+  color: black;
+}
+.right-box_3 {
+  float: right;
+  width: 33.3%;
+  height: 33.3%;
+  background: url("https://www.interpon.com/medias/?context=bWFzdGVyfHJvb3R8MTA2fGltYWdlL2pwZWd8aDg2L2gyMy84Nzk5NDYzNzY4MDk0LmpwZ3wwOTA0MjNiNjQwNzhiMGM2NjUyMGU4YTcxN2Y2MDI1NTI5ZTBmM2IxOTRjNWEyZGUzYTZkMDdhYjU5MGE2YzY4");
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-box_3:hover {
+  color: black;
+}
+.btn {
+  z-index: 1;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.navbar .icon {
+  display: none;
+}
+.profile {
+  float: left;
+  width: 100%;
+  height: 33.3%;
+  background-color: white;
+  opacity: 0.9;
+  text-align: CENTER;
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+}
+.picture {
+  float: left;
+  margin: 20px;
+  margin-left: 100px;
+}
+.profile-bio {
+  text-align: left;
+  color: black;
+}
+.skill {
+  float: left;
+  width: 50%;
+  height: 33.3%;
+  background-color: white;
+  opacity: 0.9;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+}
+.goal {
+  float: left;
+  width: 50%;
+  height: 33.3%;
+  background-color: white;
+  opacity: 0.9;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+}
+.school {
+  float: left;
+  width: 50%;
+  height: 33.3%;
+  background-color: white;
+  opacity: 0.9;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  overflow: scroll;
+}
+.experience {
+  float: left;
+  width: 50%;
+  height: 33.3%;
+  background-color: white;
+  opacity: 0.9;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .right-box_1, .right-box_2, .right-box_3, .left-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width; 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
