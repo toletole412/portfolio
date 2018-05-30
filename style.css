@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
 html, body {
   margin: 0;
@@ -6,7 +7,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
-.intro, .AboutMe, .portfolio {
+.intro, .AboutMe,.others, .portfolio {
   height: 100%;
   width: 100%;
   margin: auto;
@@ -14,6 +15,7 @@ html, body {
   display: table;
   top: 0;
 }
+
 .left-box {
   float: left;
   width: 66.65%;
@@ -26,7 +28,7 @@ html, body {
   color: white;
 }
 .right-box_1 {
-  float: right;
+  float: left;
   width: 33.3%;
   height: 33.3%;
   background: url("http://www.misucell.com/data/out/5/IMG_63143.png");
@@ -47,7 +49,7 @@ html, body {
 }
 
 .right-box_2 {
-  float: right;
+  float: left;
   width: 33.3%;
   height: 33.3%;
   background: url("https://upload.wikimedia.org/wikipedia/commons/6/60/Single_Color_Flag_-_0087DC.png");
@@ -64,7 +66,7 @@ html, body {
   color: black;
 }
 .right-box_3 {
-  float: right;
+  float: left;
   width: 33.3%;
   height: 33.3%;
   background: url("https://www.interpon.com/medias/?context=bWFzdGVyfHJvb3R8MTA2fGltYWdlL2pwZWd8aDg2L2gyMy84Nzk5NDYzNzY4MDk0LmpwZ3wwOTA0MjNiNjQwNzhiMGM2NjUyMGU4YTcxN2Y2MDI1NTI5ZTBmM2IxOTRjNWEyZGUzYTZkMDdhYjU5MGE2YzY4");
@@ -115,7 +117,7 @@ html, body {
 .profile {
   float: left;
   width: 100%;
-  height: 33.3%;
+  height: 100%;
   background-color: white;
   opacity: 0.9;
   text-align: CENTER;
@@ -125,43 +127,53 @@ html, body {
 }
 .picture {
   float: left;
-  margin: 20px;
-  margin-left: 100px;
+}
+.photo {
+  float: left;
+  width: 40%;
+  height: 100%;
 }
 .profile-bio {
+  float: right;
+  width: 60%;
+  height: 100%;
   text-align: left;
   color: black;
+}
+.explanation {
+  font-family: 'Crimson Text', serif;
 }
 .skill {
   float: left;
   width: 50%;
-  height: 33.3%;
+  height: 50%;
   background-color: white;
   opacity: 0.9;
-  text-align: left;
-  font-size: 50px;
+  text-align: center;
+  font-size: 40px;
   font-family: 'Amatic SC', cursive;
   color: black;
 }
 .goal {
   float: left;
   width: 50%;
-  height: 33.3%;
+  height: 50%;
   background-color: white;
   opacity: 0.9;
-  text-align: left;
-  font-size: 50px;
+  text-align: center;
+  font-size: 40px;
   font-family: 'Amatic SC', cursive;
   color: black;
 }
 .school {
+
   float: left;
   width: 50%;
-  height: 33.3%;
+  height: 50%;
   background-color: white;
   opacity: 0.9;
-  text-align: left;
-  font-size: 50px;
+  text-align: center;
+  font-size: 40px;
   font-family: 'Amatic SC', cursive;
   color: black;
   overflow: scroll;
@@ -169,17 +181,19 @@ html, body {
 .experience {
   float: left;
   width: 50%;
-  height: 33.3%;
+  height: 50%;
   background-color: white;
   opacity: 0.9;
-  text-align: left;
-  font-size: 50px;
+  text-align: center;
+  font-size: 40px;
   font-family: 'Amatic SC', cursive;
   color: black;
 }
 
 @media screen and (max-width: 600px) {
-  .right-box_1, .right-box_2, .right-box_3, .left-box {
+  .right-box_1, .right-box_2, .right-box_3, .left-box, .AboutMe, .skill, .goal,
+  .school, .experience, .photo, .profile-bio
+  {
     width: 100%;
   }
 }
