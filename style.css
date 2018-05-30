@@ -7,8 +7,17 @@ html, body {
   height: 100%;
   width: 100%;
 }
-.intro, .AboutMe,.others, .portfolio {
+
+.intro, .AboutMe, .information {
   height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  top: 0;
+
+}
+
+.portfolio {
   width: 100%;
   margin: auto;
   background-color: #f8f8f6;
@@ -45,7 +54,7 @@ html, body {
   color: black;
 }
 .item {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .right-box_2 {
@@ -85,49 +94,7 @@ html, body {
 .btn {
   z-index: 1;
 }
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  opacity: 0.7;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-family: 'Ubuntu', sans-serif;
-}
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.navbar .icon {
-  display: none;
-}
-.profile {
-  float: left;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  opacity: 0.9;
-  text-align: CENTER;
-  font-size: 30px;
-  font-family: 'Amatic SC', cursive;
-  color: white;
-}
-.picture {
-  float: left;
-}
+
 .photo {
   float: left;
   width: 40%;
@@ -139,6 +106,7 @@ html, body {
   height: 100%;
   text-align: left;
   color: black;
+  font-family: 'Amatic SC', cursive;
 }
 .explanation {
   font-family: 'Crimson Text', serif;
@@ -154,7 +122,7 @@ html, body {
   font-family: 'Amatic SC', cursive;
   color: black;
 }
-.goal {
+.contact {
   float: left;
   width: 50%;
   height: 50%;
@@ -176,7 +144,6 @@ html, body {
   font-size: 40px;
   font-family: 'Amatic SC', cursive;
   color: black;
-  overflow: scroll;
 }
 .experience {
   float: left;
@@ -190,15 +157,22 @@ html, body {
   color: black;
 }
 
+.title {
+  float:left;
+  width:100%;
+  height:10%;
+}
+
 .card {
-    width: 100%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
     border-radius: .5rem;
     cursor: pointer;
     border: .1rem solid lightgray;
     box-shadow: 0 0 1rem 0 rgba(black, .05);
     transition: box-shadow 200ms, transform 200ms;
     overflow: scroll;
+    margin-left: -15px;
   }
 
 .card:hover {
@@ -219,7 +193,7 @@ html, body {
 
 .card-title {
         font-weight: 500;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: 'Ubuntu', sans-serif;
     }
 
@@ -237,37 +211,42 @@ html, body {
     grid-row-gap: 2rem;
     justify-items: stretch;
     align-items: start;
-    padding: 3rem 3rem;
+    padding: 3rem 2rem;
     width: 100%;
 }
 
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-linkedin {
+    color: #4875B4
+}
+.fa-github {
+    color: black;
+}
+.fa-envelope {
+    color: grey;
+}
 
 
-@media screen and (max-width: 600px) {
-  .right-box_1, .right-box_2, .right-box_3, .left-box, .AboutMe, .skill, .goal,
-  .school, .experience, .photo, .profile-bio
+@media screen and (max-width: 667px) {
+  .right-box_1, .right-box_2, .right-box_3, .left-box, .AboutMe, .information, .skill, .contact,
+  .school, .experience, .photo, .profile-bio, .card
   {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width; 600px) {
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
   }
 }
