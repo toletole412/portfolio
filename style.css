@@ -17,8 +17,8 @@ html, body {
 }
 
 .AboutMe, .information {
-  height: 100%;
   width: 100%;
+  height: 100%;
   margin: auto;
   background-color: white;
   top: 0;
@@ -245,27 +245,59 @@ html, body {
     color: grey;
 }
 
+.footer {
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
-  .left-box, .AboutMe, .information, .skill, .contact,
-  .school, .experience, .profile-bio, .card, .intro
+  .left-box, .AboutMe, .information,  .profile-bio, .intro
   {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 600px) {
-  .photo
+  .right-box_1, .right-box_2, .right-box_3
+  {
+    font-size: 1rem;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .photo, .profile-bio
   {
     width: 90%;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .profile-bio
+  .card
   {
     width: 90%;
-    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill, .contact,
+  .school, .experience, .footer
+  {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .information
+  {
+    width: 90%;
+    height: 280%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio
+  {
+    width: 90%;
+    height: 200%;
   }
 }
