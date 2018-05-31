@@ -94,7 +94,6 @@ html, body {
 .btn {
   z-index: 1;
 }
-
 .photo {
   float: left;
   width: 40%;
@@ -119,7 +118,7 @@ html, body {
   opacity: 0.9;
   text-align: center;
   font-size: 40px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Crimson Text', serif;
   color: black;
 }
 .contact {
@@ -130,11 +129,10 @@ html, body {
   opacity: 0.9;
   text-align: center;
   font-size: 40px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Crimson Text', serif;
   color: black;
 }
 .school {
-
   float: left;
   width: 50%;
   height: 50%;
@@ -142,7 +140,7 @@ html, body {
   opacity: 0.9;
   text-align: center;
   font-size: 40px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Crimson Text', serif;
   color: black;
 }
 .experience {
@@ -153,10 +151,9 @@ html, body {
   opacity: 0.9;
   text-align: center;
   font-size: 40px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Crimson Text', serif;
   color: black;
 }
-
 .title {
   float:left;
   width:100%;
@@ -164,7 +161,7 @@ html, body {
 }
 
 .card {
-    width: 90%;
+    width: 80%;
     height: 70%;
     border-radius: .5rem;
     cursor: pointer;
@@ -193,22 +190,21 @@ html, body {
 
 .card-title {
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: 'Ubuntu', sans-serif;
     }
 
 .card-text {
         margin-top: .3rem;
         opacity: .8;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-family: 'Crimson Text', serif;
     }
 
 .overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     justify-items: stretch;
     align-items: start;
     padding: 3rem 2rem;
