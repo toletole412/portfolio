@@ -19,10 +19,11 @@ html, body {
 
 .portfolio {
   width: 100%;
-  margin: auto;
+  margin-top: auto;
   background-color: #f8f8f6;
   display: table;
   top: 0;
+  overflow: scroll;
 }
 
 .left-box {
@@ -97,12 +98,10 @@ html, body {
 .photo {
   float: left;
   width: 40%;
-  height: 100%;
 }
 .profile-bio {
   float: right;
   width: 60%;
-  height: 100%;
   text-align: left;
   color: black;
   font-family: 'Amatic SC', cursive;
@@ -113,7 +112,6 @@ html, body {
 .skill {
   float: left;
   width: 50%;
-  height: 50%;
   background-color: white;
   opacity: 0.9;
   text-align: center;
@@ -124,7 +122,6 @@ html, body {
 .contact {
   float: left;
   width: 50%;
-  height: 50%;
   background-color: white;
   opacity: 0.9;
   text-align: center;
@@ -135,7 +132,6 @@ html, body {
 .school {
   float: left;
   width: 50%;
-  height: 50%;
   background-color: white;
   opacity: 0.9;
   text-align: center;
@@ -146,7 +142,6 @@ html, body {
 .experience {
   float: left;
   width: 50%;
-  height: 50%;
   background-color: white;
   opacity: 0.9;
   text-align: center;
