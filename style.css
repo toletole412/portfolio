@@ -234,7 +234,7 @@ html, body {
 }
 
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 600px) {
   .right-box_1, .right-box_2, .right-box_3, .left-box, .AboutMe, .information, .skill, .contact,
   .school, .experience, .photo, .profile-bio, .card
   {
